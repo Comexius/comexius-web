@@ -1,0 +1,99 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#000;color:#F5F5F7;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:#5B95FF}a:hover{color:#8AB4FF}
+h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.02em;line-height:1.1}
+p{margin:0}
+.wrap{max-width:1120px;width:100%;margin:0 auto;padding-left:24px;padding-right:24px}
+.site-header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:20px;padding-bottom:20px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#F5F5F7}
+.brand:hover{color:#F5F5F7}
+.logo{width:32px;height:32px;border-radius:50%;background:#2F6FED;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;color:#fff}
+.logo.sm{width:20px;height:20px;font-size:11px}
+.brand-name{font-weight:600;letter-spacing:.02em;font-size:16px}
+.brand-tag{color:#6E6E73;font-size:14px;margin-left:4px}
+.nav{display:flex;flex-wrap:wrap;align-items:center;gap:24px;font-size:15px}
+.nav a{color:#A1A1A6;text-decoration:none}
+.nav a:hover{color:#F5F5F7}
+.pill{display:inline-block;border-radius:999px;padding:10px 18px;font-weight:500;text-decoration:none;color:#F5F5F7;border:1px solid #3A3A3C;background:none;font:inherit;cursor:pointer;line-height:1.3}
+.pill:hover{color:#F5F5F7;border-color:#5A5A5E}
+.pill.lang{padding:6px 12px;font-size:13px;color:#A1A1A6;border-color:#333}
+.pill.primary{background:#2F6FED;border-color:#2F6FED;color:#fff;font-weight:600}
+.pill.primary:hover{background:#3F7CF0;color:#fff}
+.pill.lg{padding:16px 28px;font-size:17px}
+.nav .pill{color:#F5F5F7}
+.hero{padding-top:96px;padding-bottom:72px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px}
+.eyebrow{color:#5B95FF;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.hero h1{font-size:64px;line-height:1.05;max-width:820px}
+.lead{font-size:21px;color:#A1A1A6;max-width:680px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:8px}
+.fine{font-size:14px;color:#6E6E73}
+.section{padding-top:96px;padding-bottom:96px;display:flex;flex-direction:column;gap:40px}
+.section.tight{padding-top:0}
+.section-head{max-width:640px;display:flex;flex-direction:column;gap:12px}
+.section h2{font-size:40px}
+.sub{color:#A1A1A6;font-size:19px}
+.band{background:#0A0A0B;border-top:1px solid #1C1C1E;border-bottom:1px solid #1C1C1E}
+.card{background:#111113;border:1px solid #222;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:12px}
+.card h3{font-size:20px;font-weight:600}
+.card p,.card li{color:#A1A1A6;font-size:15px}
+.card ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;color:#D1D1D6}
+.card ul li{color:#D1D1D6}
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.steps{background:#111113;border:1px solid #222;border-radius:24px;padding:32px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.step{display:flex;flex-direction:column;gap:10px}
+.step .n{color:#5B95FF;font-weight:600;font-size:14px}
+.step .q{color:#F5F5F7;font-weight:500}
+.step .d{color:#A1A1A6;font-size:15px}
+.split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;align-items:center}
+.split.top{align-items:start}
+.split.wide{grid-template-columns:minmax(0,1fr) minmax(0,2fr)}
+.col{display:flex;flex-direction:column;gap:16px}
+.seals{display:flex;flex-direction:column;gap:14px}
+.seal{display:flex;gap:16px;align-items:flex-start;background:#111113;border:1px solid #222;border-radius:16px;padding:20px}
+.seal .dot{flex:none;width:36px;height:36px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+.seal .dot.ok{background:#10351F;color:#4ADE80}
+.seal .dot.check{background:#1B2A4A;color:#8AB4FF}
+.seal .dot.na{background:#2A2A2E;color:#D1D1D6}
+.seal strong{font-size:16px;display:block;margin-bottom:4px}
+.seal span.t{color:#A1A1A6;font-size:15px}
+.label{font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+.label.ok{color:#4ADE80}.label.check{color:#8AB4FF}
+.about{color:#D1D1D6;font-size:18px}
+.chips{display:flex;flex-wrap:wrap;gap:12px;font-size:15px}
+.chip{border:1px solid #222;border-radius:999px;padding:10px 18px;color:#A1A1A6}
+.form{background:#111113;border:1px solid #222;border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:18px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-size:14px;color:#A1A1A6}
+.field input,.field select,.field textarea{background:#000;border:1px solid #333;border-radius:12px;padding:14px 16px;color:#F5F5F7;font:inherit;font-size:16px;width:100%}
+.field textarea{resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid #2F6FED;outline-offset:1px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form .fine{font-size:13px}
+.site-footer{border-top:1px solid #1C1C1E;margin-top:auto}
+.site-footer .wrap{padding-top:40px;padding-bottom:40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;font-size:14px;color:#6E6E73}
+.foot-brand{display:flex;flex-direction:column;gap:8px;max-width:520px}
+.foot-brand .line{display:flex;align-items:center;gap:8px;color:#A1A1A6}
+.legal{display:flex;flex-wrap:wrap;gap:20px}
+.legal a{color:#A1A1A6;text-decoration:none}
+.legal a:hover{color:#F5F5F7}
+.page{min-height:100vh;display:flex;flex-direction:column}
+.doc{padding-top:64px;padding-bottom:96px;max-width:760px;display:flex;flex-direction:column;gap:20px;color:#D1D1D6}
+.doc h1{font-size:40px;margin-bottom:8px}
+.doc h2{font-size:22px;margin-top:16px}
+.doc p,.doc li{font-size:16px}
+.doc ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.doc .meta{color:#6E6E73;font-size:14px}
+.center{text-align:center;align-items:center}
+@media (max-width:900px){
+  .hero{padding-top:64px;padding-bottom:48px}
+  .hero h1{font-size:44px}
+  .lead{font-size:18px}
+  .section{padding-top:64px;padding-bottom:64px;gap:28px}
+  .section h2{font-size:32px}
+  .grid-3,.grid-2,.steps,.split,.split.wide{grid-template-columns:minmax(0,1fr)}
+  .split{gap:28px}
+  .nav{gap:14px}
+  .doc h1{font-size:32px}
+}

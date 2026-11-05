@@ -1,0 +1,17 @@
+{
+  // Sitio público comexius.com. Lo publica Workers Builds: build `npm run build`, deploy `npx wrangler deploy`.
+  "name": "comexius-web",
+  "main": "dist/index.js",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "comexius.com", "custom_domain": true },
+    { "pattern": "www.comexius.com", "custom_domain": true }
+  ],
+  // Mail del formulario de acceso. EMAIL_TO (casilla de destino) se carga en el panel de Cloudflare, no en el repo.
+  "send_email": [{ "name": "EMAIL" }],
+  "keep_vars": true,
+  // Respaldo: el KV con el que se publicó antes de conectar el repo. El Worker usa primero lo empaquetado.
+  "kv_namespaces": [{ "binding": "SITE", "id": "a2dff21800864c30be999453c16f908f" }]
+}
